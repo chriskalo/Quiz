@@ -40,7 +40,7 @@
 <input type="button" value="submit" onclick="test()">
 
 
-/*<h2 onmouseover="responsiveVoice.speak('What does Javascript do?');" onmouseleave="responsiveVoice.cancel();"><font color="red">Q1.What does Javascript do?</font></h2>
+<h2 onmouseover="responsiveVoice.speak('What does Javascript do?');" onmouseleave="responsiveVoice.cancel();"><font color="red">Q1.What does Javascript do?</font></h2>
 <input type="radio" name="q1" value="a" onclick="playclip();" >Define the content of web pages
 <input type="radio" name="q1" value="b" onclick="playclip();" >Specify the layout of web pages
 <input type="radio" name="q1" value="c" onclick="playclip();" >Program the behavior of web pages<br><br>
@@ -56,7 +56,7 @@
 <input type="radio" name="q3" value="a" onclick="playclip();">//... 
 <input type="radio" name="q3" value="b" onclick="playclip();">/*...*/
 <input type="radio" name="q3" value="c" onclick="playclip();">**...*<br><br>
-<input type="button" value="See the answer" onclick="chock()">*/
+<input type="button" value="See the answer" onclick="chock()">
 </div>
 </form>
 
@@ -181,19 +181,19 @@ var q1=document.myform.q1.value;
                var count=0;
                var cars = ["","",""];
                
-               if((q1!="a" && q1!="b")|| (q2!="a" && q2!="b") || (q3!="a" && q3!="b")){
+               if((q1!="a" && q1!="b" && q1!="c")|| (q2!="a" && q2!="b" && q2!="c") || (q3!="a" && q3!="b" && q3!="c")){
                   alert("error type : You must answer all the questions");
                   return;
                }
 
-               if(q1=="a"){
+               if(q1=="c"){
                   count++;                
                }
                else{
                   cars[0]="lesson 1, ";
                } 
                
-               if(q2=="a"){
+               if(q2=="b"){
                   count++;                
                }
               else{
