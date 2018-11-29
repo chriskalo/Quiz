@@ -12,12 +12,12 @@
 <h1 onmouseover="responsiveVoice.speak('Learn the basic attributes of js in minutes');" onmouseleave="responsiveVoice.cancel();">Learn<font color="red"> the basic</font> attributes of js <font color="red">in minutes</font></h1>
 
 <h2 onmouseover="responsiveVoice.speak('Choose one of the lessons below');" onmouseleave="responsiveVoice.cancel();">Choose one of the lessons below</h2>
-<input type="radio" name="q1" value="a" onclick="playclip();" >1.print in js
-<input type="radio" name="q1" value="b" onclick="playclip();" >2.text to speech in js
-<input type="radio" name="q1" value="c" onclick="playclip();" >3.initialize variable<br>
-<input type="radio" name="q1" value="d" onclick="playclip();" >4.do math
-<input type="radio" name="q1" value="e" onclick="playclip();" >5.if command
-<input type="radio" name="q1" value="f" onclick="playclip();" >6.for command<br><br>
+<input type="radio" name="c1" value="a" onclick="playclip();" >1.print in js
+<input type="radio" name="c1" value="b" onclick="playclip();" >2.text to speech in js
+<input type="radio" name="c1" value="c" onclick="playclip();" >3.initialize variable<br>
+<input type="radio" name="c1" value="d" onclick="playclip();" >4.do math
+<input type="radio" name="c1" value="e" onclick="playclip();" >5.if command
+<input type="radio" name="c1" value="f" onclick="playclip();" >6.for command<br><br>
 <input type="button" value="See the lesson" onclick="chapters()">
    
 
@@ -45,33 +45,33 @@
       
        function chapters(){
                 playclip();
-               var q1=document.myform.q1.value;
+               var c1=document.myform.c1.value;
                
-               if(q1!="a" && q1!="b" && q1!="c" && q1!="d" && q1!="e" && q1!="f" ){
+               if(c1!="a" && c1!="b" && c1!="c" && c1!="d" && c1!="e" && c1!="f" ){
                   alert("error type : Choose one lesson");
                   return;
                   }
 
-               if(q1=="a"){
+               if(c1=="a"){
                   alert("mathima print");              
                }
-              else if(q1=="b")
+              else if(c1=="b")
                {
                  alert("mathima text to speech");
                }                 
-              else if(q1=="c")
+              else if(c1=="c")
                {
                  alert("mathima initialize variable");
                }        
-              else if(q1=="d")
+              else if(c1=="d")
                {
                  alert("mathima math");
                }        
-              else if(q1=="e")
+              else if(c1=="e")
                {
                  alert("mathima if");
                }
-              else if(q1=="f")
+              else if(c1=="f")
                {
                  alert("mathima for");
                }                
