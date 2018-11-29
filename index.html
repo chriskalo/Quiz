@@ -5,7 +5,7 @@
    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 </head>
 
-<body background="image.png">
+<body style="background-color:powderblue;">
 
 <form name="myform">
 <div align="center">
@@ -18,7 +18,7 @@
 <input type="radio" name="q1" value="d" onclick="playclip();" >4.do math
 <input type="radio" name="q1" value="e" onclick="playclip();" >5.if command
 <input type="radio" name="q1" value="f" onclick="playclip();" >6.for command<br><br>
-<input type="button" value="See how" onclick="chapters()">
+<input type="button" value="See the lesson" onclick="chapters()">
    
 
 
@@ -122,7 +122,7 @@ var q1=document.myform.q1.value;
                var q1=document.myform.q1.value;
                
                if(q1!="a" && q1!="b" && q1!="c" && q1!="d" && q1!="e" && q1!="f" ){
-                  alert("Επέλεξε μία απάντηση");
+                  alert("Choose one lesson");
                   return;
                   }
 
