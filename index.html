@@ -177,6 +177,11 @@ var q1=document.myform.q1.value;
                var q3=document.myform.q3.value;
                var count=0;
                var cars = ["","",""];
+               
+               if((q1!="a" && q1!="b")|| (q2!="a" && q2!="b") || (q3!="a" && q3!="b")){
+                  alert("error type : Choose one of the answers below");
+                  return;
+               }
 
                if(q1=="a"){
                   count++;                
