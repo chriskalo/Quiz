@@ -44,7 +44,7 @@
    <script>
       
        function chapters(){
-                victo();
+                playclip();
                var c1=document.myform.c1.value;
                
                if(c1!="a" && c1!="b" && c1!="c" && c1!="d" && c1!="e" && c1!="f" ){
@@ -116,7 +116,6 @@
                }  
               if(count==3)
               {
-                 victo();
                  alert("You passed the test congrats!!!");
               }
               else
@@ -151,29 +150,6 @@ audio.play();
 <audio>
 <source src="click.mp3"></source>
 <source src="click.ogg"></source>
-</audio>
-
-<script>
-function victo() {
-if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
-if (document.all)
- {
-  document.all.sound.src = "victory.mp3";
- }
-}
-
-else {
-{
-var audio = document.getElementsByTagName("audio")[0];
-audio.play();
-}
-}
-}
-</script>
-
-<audio>
-<source src="victory.mp3"></source>
-<source src="victory.ogg"></source>
 </audio>
 
 <div id="sounddiv"><bgsound id="sound"></div>
