@@ -116,6 +116,7 @@
                }  
               if(count==3)
               {
+                 victory();
                  alert("You passed the test congrats!!!");
               }
               else
@@ -149,6 +150,29 @@ audio.play();
 
 <audio>
 <source src="click.mp3"></source>
+<source src="click.ogg"></source>
+</audio>
+
+<script>
+function victory() {
+if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
+if (document.all)
+ {
+  document.all.sound.src = "click.mp3";
+ }
+}
+
+else {
+{
+var audio = document.getElementsByTagName("audio")[0];
+audio.play();
+}
+}
+}
+</script>
+
+<audio>
+<source src="victory.mp3"></source>
 <source src="click.ogg"></source>
 </audio>
 
