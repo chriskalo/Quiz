@@ -36,6 +36,11 @@
 <input type="radio" name="q3" value="a" onclick="playclip();">we dont use a word
 <input type="radio" name="q3" value="b" onclick="playclip();">var
 <input type="radio" name="q3" value="c" onclick="playclip();">int<br><br>
+   
+<h2 onmouseover="responsiveVoice.speak('Which symbol is used for multi line comments in Javascript?');" onmouseleave="responsiveVoice.cancel();"><font color="red">Q4.Which symbol is used for multi line comments in Javascript?</font></h2>
+<input type="radio" name="q4" value="a" onclick="playclip();">//...
+<input type="radio" name="q4" value="b" onclick="playclip();">/*...*/
+<input type="radio" name="q4" value="c" onclick="playclip();">**...*<br><br>
 
 <input type="button" value="submit" onclick="test()">
 </div>
@@ -86,10 +91,11 @@
                var q1=document.myform.q1.value;
                var q2=document.myform.q2.value;
                var q3=document.myform.q3.value;
+               var q4=document.myform.q4.value;
                var count=0;
-               var cars = ["","",""];
+               var cars = ["","","",""];
                
-               if((q1!="a" && q1!="b" && q1!="c")|| (q2!="a" && q2!="b" && q2!="c") || (q3!="a" && q3!="b" && q3!="c")){
+               if((q1!="a" && q1!="b" && q1!="c")|| (q2!="a" && q2!="b" && q2!="c") || (q3!="a" && q3!="b" && q3!="c") || (q4!="a" && q4!="b" && q4!="c")){
                   alert("error type : You must answer all the questions");
                   return;
                }
@@ -114,13 +120,20 @@
                else{
                 cars[2]="lesson 3, ";
                }  
-              if(count==3)
+               if(q4=="b"){
+                  count++;                
+               }
+               else{
+                cars[3]="lesson 6, ";
+               }  
+              
+              if(count==4)
               {
                  alert("You passed the test congrats!!!");
               }
               else
               {
-                 alert("You loose\n\nYou earn "+count+" points\n\nYou only need "+(3-count)+" more points\n\nRead the "+cars[0]+cars[1]+cars[2]+"and try again");
+                 alert("You loose\n\nYou earn "+count+" points\n\nYou only need "+(4-count)+" more points\n\nRead the "+cars[0]+cars[1]+cars[2]+cars[3]+"and try again");
               }
          }
 </script>
