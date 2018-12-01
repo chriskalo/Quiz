@@ -44,7 +44,7 @@
    <script>
       
        function chapters(){
-                playclip();
+                victo();
                var c1=document.myform.c1.value;
                
                if(c1!="a" && c1!="b" && c1!="c" && c1!="d" && c1!="e" && c1!="f" ){
@@ -116,7 +116,7 @@
                }  
               if(count==3)
               {
-                 victory();
+                 victo();
                  alert("You passed the test congrats!!!");
               }
               else
@@ -154,7 +154,7 @@ audio.play();
 </audio>
 
 <script>
-function victory() {
+function victo() {
 if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
 if (document.all)
  {
