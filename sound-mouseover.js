@@ -1,4 +1,5 @@
-
+<html>
+ <body>
 function victo() {
 if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
 if (document.all)
@@ -20,3 +21,5 @@ audio.play();
 </audio>
 
 <div id="sounddiv"><bgsound id="sound"></div>
+</body>
+</html>
