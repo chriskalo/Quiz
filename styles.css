@@ -1,5 +1,5 @@
 #delegar {
-    position:fixed;
+    position: fixed;
     right: 1%;
     bottom: 1%;
     height: 90px;
@@ -16,5 +16,6 @@
     width: 100%;
     font-size: 65%;
     border-radius: 0;
+    right: 0;
 }
 }
