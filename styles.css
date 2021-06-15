@@ -8,4 +8,12 @@
     font-size: 65%;
 }
 
-
+@media screen and (max-width: 600px) {
+  #delegar {
+    position:fixed;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    font-size: 65%;
+}
+}
