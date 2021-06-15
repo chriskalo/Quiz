@@ -1,0 +1,13 @@
+#delegar {
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    font-size: 65%;
+}
+
+h1 {
+  text-align: right;
+}
