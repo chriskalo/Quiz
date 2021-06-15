@@ -8,6 +8,10 @@
     font-size: 65%;
 }
 
+img {
+  width: 70%;
+}
+
 @media screen and (max-width: 600px) {
   #delegar {
     position:fixed;
@@ -18,8 +22,10 @@
     border-radius: 0;
     right: 0;
 }
+ 
+ img {
+  width: 10%;
+}
 }
 
-img {
-  width: 70%;
-}
+
