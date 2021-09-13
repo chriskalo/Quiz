@@ -16,7 +16,7 @@ img {
   width: 70%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1800px) {
   #delegar {
     position:fixed;
     bottom: 0;
